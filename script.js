@@ -34,7 +34,6 @@ console.log("The original/initial array is: ", arr);
     arr.push(newEntry);
     console.log("New entry in database: ", newEntry);
     console.log("New Database list: ", arr);
-    
     }
 
 // 3. Remove Admins
@@ -76,7 +75,7 @@ console.log("The original/initial array is: ", arr);
         for( let i=0; i<arr.length; i++){
             age_sum += arr[i].age;
         }
-        let avg_age = age_sum/n;
+        let avg_age = age_sum/arr.length;
         console.log("the Average Age is : ", avg_age, "years. ");
     }
 
