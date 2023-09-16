@@ -4,7 +4,6 @@ let arr = [
     { id: 3, name: 'karen', age: 17, profession: "admin", salary: 900 },
     { id: 4, name: "jane", age: 27, profession: "admin", salary: 800 }
   ];
-const n = arr.length;
 console.log("The original/initial array is: ", arr);
 
 // 1.(a) Print all developers from the array.
@@ -74,7 +73,7 @@ console.log("The original/initial array is: ", arr);
     function averageAge() {
         let age_sum = null;
         console.log("for all people in list:", arr);
-        for( let i=0; i<n; i++){
+        for( let i=0; i<arr.length; i++){
             age_sum += arr[i].age;
         }
         let avg_age = age_sum/n;
@@ -85,7 +84,7 @@ console.log("The original/initial array is: ", arr);
     function checkAgeAbove25() {
         let old_persons = [];
 
-        for(let i=0; i<n; i++){
+        for(let i=0; i<arr.length; i++){
             if(arr[i].age > 25){
                 old_persons.push(arr[i].name);
             }
@@ -153,11 +152,11 @@ console.log("The original/initial array is: ", arr);
   function PrintHighEarningDevelopers() {
     //Write your code here , just console.log
     let sum_salary = 0, dev_names=[];
-    for(let i=0; i<n; i++){
+    for(let i=0; i<arr.length; i++){
         sum_salary += arr[i].salary;
     }
     let avg_salary = sum_salary/n;
-    for(let i=0; i<n; i++){
+    for(let i=0; i<arr.length; i++){
         if(arr[i].salary > avg_salary ){
             dev_names.push(arr[i].name);
         }
